@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phonon Media Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🎵 Phonon Media Upload</h1>
+
+<p>Select an audio file:</p>
+
+<input id="audioFile" type="file" accept="audio/*">
+
+<br><br>
+
+<label>
+Song name:
+<input id="songName" placeholder="my_song">
+</label>
+
+<br><br>
+
+<button id="uploadButton">
+Convert and Upload
+</button>
+
+<p id="status"></p>
+
+<pre id="result"></pre>
+
+
+<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
