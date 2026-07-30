@@ -43,6 +43,10 @@ button.onclick = async () => {
 
 
         log("Checking FFmpeg...");
+        log(
+            "FFmpeg object: "
+            + typeof FFmpeg
+        );
 
 
         if (!FFmpegWASM) {
@@ -55,7 +59,7 @@ button.onclick = async () => {
         log("FFmpeg library found");
 
 
-        const { FFmpeg } = FFmpegWASM;
+        const { FFmpeg } = FFmpeg;
 
 
         const ffmpeg = new FFmpeg();
