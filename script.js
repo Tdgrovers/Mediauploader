@@ -59,7 +59,9 @@ button.onclick = async () => {
         log("FFmpeg library found");
 
 
-        const ffmpeg = new FFmpeg.FFmpeg();
+        const ffmpeg = FFmpeg.createFFmpeg({
+            log: true
+        });
 
 
         ffmpeg.on(
@@ -87,7 +89,7 @@ button.onclick = async () => {
 
         log("Starting FFmpeg download...");
 
-
+        log("Loading FFmpeg core...");
         await ffmpeg.load();
 
 
