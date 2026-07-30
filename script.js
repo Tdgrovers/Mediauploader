@@ -49,7 +49,7 @@ button.onclick = async () => {
         );
 
 
-        if (!FFmpegWASM) {
+        if (!FFmpeg) {
             throw new Error(
                 "FFmpeg library not loaded"
             );
@@ -59,10 +59,7 @@ button.onclick = async () => {
         log("FFmpeg library found");
 
 
-        const { FFmpeg } = FFmpeg;
-
-
-        const ffmpeg = new FFmpeg();
+        const ffmpeg = new FFmpeg.FFmpeg();
 
 
         ffmpeg.on(
